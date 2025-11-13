@@ -142,7 +142,7 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
+\Huge{Vladimir Marinov} \\[7.5pt]
 \href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
 \href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
 \href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
@@ -161,23 +161,29 @@ This CV can also be automatically compiled and published using GitHub Actions. F
 %Experience
 \section{Work Experience}
 
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+\begin{joblong}{RF and Microwave Engineer - EECL}{October 2024 - Present}
+    \item Hello
+\end{joblong}
 
+\begin{joblong}{Part Time Hardware Engineer - EnduroSat}{October 2023 - April 2024}
+    \item  Developed mission-critical satellite hardware in Altium (schematic and layout) with a focus on very high density PCB designs.
+\end{joblong}
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
+\begin{joblong}{Teaching Assistant - Imperial College London}{July 2022 - April 2024}
+    \item  Provided teaching support for the \textit{Instrumentation} module, focusing on hardware design for precision analog measurements, and analog and high-frequency metrology and calibration.
+    \item Worked on implementing a fully-functional 32-bit RISC-V processor in SystemVerilog, which is now used for teaching in the Instruction Architectures course. Provided teaching support for the course.
+\end{joblong}
+
+\begin{joblong}{Full Time Hardware Engineer - EnduroSat}{April 2023 - October 2023}
+    \item  Developed satellite hardware in Altium (schematic and layout) including antennas and RF hardware, precision protected power supplies and other custom mission-specific devices.
+    \item Developed internal company guidelines on EMI/EMC and grounding practices for flight hardware.
+    \item Worked on reliability analysis of hardware including Failure Mode and Effect Analysis (FMEA), Fault Detection, Isolation and Recovery (FDIR), and reliability simulations in Ansys Sherlock.
+\end{joblong}
+
+\begin{joblong}{Part Time RF Engineer - EnduroSat}{July 2019 - March 2020}
+    \item Worked on software and hardware realizations of Software-Defined-Radio (SDR) Ground Stations for satellite communications. 
 \end{joblong}
   
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
@@ -193,6 +199,8 @@ long long line of blah blah that will wrap when the table fills the column width
 2021 & Class 10th Some Board \hfill  (Grades) \\
 \end{tabularx}
 
+
+
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
@@ -201,6 +209,15 @@ long long line of blah blah that will wrap when the table fills the column width
 \nocite{*}
 \printbibliography[heading=none]
 \end{refsection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\section{Projects}
+\begin{joblong}{Avionics Team Lead - Karman Space Program, London}{October 2021 - July 2023}
+   \item Led the avionics team of university student rocketry project, and developed custom flight computer hardware, RF telemetry hardware, and power supplies. Initiated and later support embedded software development (in C) for custom hardware. Led integration of hardware for test rocket launches and high-altitude balloon tests. 
+\end{joblong}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
@@ -212,6 +229,6 @@ Some More Skills  &  \normalsize{Also some more of this, Some more that, And som
 \end{tabularx}
 
 \vfill
-\center{\footnotesize Last updated: \today}
+% \center{\footnotesize Last updated: \today}
 
 \end{document}
