@@ -59,6 +59,9 @@
 %tabularx environment
 \usepackage{tabularx}
 
+% Qty for SI units
+\usepackage{siunitx}
+
 %for lists within experience section
 \usepackage{enumitem}
 
@@ -86,7 +89,7 @@
 
 %Setup hyperref package, and colours for links
 \usepackage[unicode, draft=false]{hyperref}
-\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\definecolor{linkcolour}{rgb}{0,0,0}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
@@ -143,11 +146,10 @@
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
 \Huge{Vladimir Marinov} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\href{}{\raisebox{-0.05\height}\faMapMarker\ London, UK} \ $|$ \ 
+\href{https://linkedin.com/in/vladimir-marinov-b738611b9}{\raisebox{-0.05\height}\faLinkedin\ Vladimir Marinov} \ $|$ \ 
+\href{mailto:vladi.g.marinov@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ vladi.g.marinov@gmail.com} \ $|$ \ 
+\href{tel:+447864894306}{\raisebox{-0.05\height}\faPhone\ +44 7864 894 306} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,14 +157,18 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV can also be automatically compiled and published using GitHub Actions. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
+\section{Profile}
+I am a passionate RF and Microwave Hardware Engineer, skilled in development of electronics systems from low frequency analog to mm-Wave frequencies (\qty{110}{\giga\hertz} and beyond).
 
 %Experience
 \section{Work Experience}
 
 \begin{joblong}{RF and Microwave Engineer - EECL}{October 2024 - Present}
-    \item Hello
+    \item Led end-to-end development of a novel W-Band frequency converter (\qtyrange{70}{86}{\giga\hertz}) — from initial RF/microwave design and simulation, through manufacturing, assembly, and delivery. Published an academic paper detailing the design and results.
+    \item Improved RF performance of complex microwave hardware by conducting full-wave 3D electromagnetic simulations and optimizations in Ansys HFSS.
+    % \item Contributed to the design and development of ultra-high-performance RF products, including wideband frequency converters and sophisticated switch matrices, focusing on architecture definition, component selection, modeling, and performance tuning.
+    \item Designed an ultra-low phase-noise LO generation subsystem to support a space-based \qtyrange{2}{18}{\giga\hertz} Software-Defined Radio (SDR).
+    \item Leading ongoing technical development of \qtyrange{82}{86}{\giga\hertz} FMCW radar front-end.
 \end{joblong}
 
 \begin{joblong}{Part Time Hardware Engineer - EnduroSat}{October 2023 - April 2024}
@@ -189,26 +195,22 @@ This CV can also be automatically compiled and published using GitHub Actions. F
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
 
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
+\begin{joblong}{MEng Electrical and Electronics Engineering, Imperial College London}{2020 - 2024}
+    \item Graduated with First Class Honours, and with Dean's List distinction
+    \item Master's thesis on Differential Slow-Wave structures, with a focus on 3D electromagnetic simulations, RF PCB design, and precision VNA measurements of differential devices. The thesis was awarded the Nicholas Battersby prize for excellence in analog electronics.
+\end{joblong}
 
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
-
+% \begin{joblong}{Sofia High School of Mathematics, Sofia}{September 2012 - June 2020}
+%    \item Graduated from one of the most prestigious high schools in Bulgaria with a program that focuses heavily on Mathematics, Physics, and Computer Science. 
+% \end{joblong}
 
 
 %----------------------------------------------------------------------------------------
 %	PUBLICATIONS
 %----------------------------------------------------------------------------------------
 \section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\textit{Design of a Highly-Integrated W-Band Up-Down Frequency Converter}   - published and presented (as first author), at Automated Radio Frequency and Microwave Measurement Society (ARMMS) Conference, April 2025 - \href{https://eecl.co.uk/wp-content/uploads/2025/05/Design-of-a-Highly-Integrated-W-Band-Up-Down-Frequency-Converter.pdf}{\faLink\ Link}
 
 %----------------------------------------------------------------------------------------
 %	PROJECTS
@@ -224,8 +226,12 @@ This CV can also be automatically compiled and published using GitHub Actions. F
 %----------------------------------------------------------------------------------------
 \section{Skills}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+RF and Microwave Hardware Design &  \normalsize{RF and Microwave systems design up to and exceeding \qty{110}{\giga\hertz}}\\
+PCB \& Hardware Design  &  \normalsize{Schematic Design and Layout in Altium Designer, Kicad}\\  
+RF Measurement and Calibration  &  \normalsize{VNA, Spectrum Analyzers, Custom Calibration Kit Design}\\  
+RF Simulation&  \normalsize{3D Electromagnetic Simulation in Ansys HFSS}\\  
+FPGA&  \normalsize{RTL development in SystemVerilog, Verilog}\\  
+Embedded C/C++&  \normalsize{Development of low-level firmware, driver, and RTOS}\\  
 \end{tabularx}
 
 \vfill
